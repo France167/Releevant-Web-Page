@@ -1,0 +1,149 @@
+.foto-careers{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50vh;
+  min-height: 30%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.title-careers {
+    margin-top: 15%;
+    color: white;
+    font-size: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .p-title-careers {
+    margin: 7rem;
+    margin-top: 3%;
+    margin-bottom: 35vh;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .career-title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .career-h4{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .p-career{
+    font-size: 1.2rem;
+    color: gray;
+    font-family: 'Lato', sans-serif;
+  }
+
+  @media screen and (max-width: 600px) {
+    .foto-careers{
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 20vh;
+      min-height: 30%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    .title-careers {
+      margin-top: 25%;
+      color: white;
+      font-size: 2rem;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .p-title-careers {
+      margin: 7rem;
+      margin-top: 3%;
+      margin-bottom: 5vh;
+      color: white;
+      font-size: 1rem;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    .accordion-button{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    .p-career{
+      font-size: 1rem;
+      color: gray;
+      font-family: 'Lato', sans-serif;
+    }
+  }
+
+  @media only screen   
+  and (min-device-width : 768px)   
+  and (max-device-width : 1024px)  
+  { 
+    .foto-careers {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 34vh;
+      min-height: 30%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+  }
+
+  .title-careers {
+    margin-top: 15%;
+    color: white;
+    font-size: 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.p-title-careers {
+  margin: 7rem;
+  margin-top: 3%;
+  margin-bottom: 18vh;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+  }
+
+  @media only screen   
+and (min-width: 1304px)   
+and (max-width: 1440px)  
+{ 
+  .foto-careers {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 46vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+}
+
+/* @media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px)  
+{ 
+  .foto-careers {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 41vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+} */

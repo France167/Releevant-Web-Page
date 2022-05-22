@@ -1,0 +1,93 @@
+.h2-cookies{
+    margin-top: 20vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-bottom: 5vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.p-cookies{
+    margin-left: 30vh;
+    margin-right: 30vh;
+    color:gray;
+}
+
+.h2-cookies-dos{
+    margin-top: 1%;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+p a{
+    text-decoration: none;
+}
+
+.h2-privacy-tit{
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h2-privacy{
+    margin-top: 3vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.foto-curso{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: -13vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+    .foto-curso{
+       display: none;
+    }
+
+    .h2-cookies{
+        margin-top: 15vh;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        margin-bottom: 5vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .p-cookies{
+        margin-left: 3vh;
+        margin-right: 3vh;
+        color:gray;
+    }
+
+    
+.h2-cookies-dos{
+    margin-top: 1%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h2-privacy-tit{
+    margin-top: 13vh;
+    margin-bottom: 5vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-family: 'Poppins', sans-serif;
+}
+.h2-privacy{
+    margin-top: 3vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+}

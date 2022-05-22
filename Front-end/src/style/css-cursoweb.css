@@ -1,0 +1,1289 @@
+.foto-cursoweb {
+  opacity: 0.95;
+}
+
+.p-title-cursoweb {
+  margin: 1rem;
+  margin-top: 25%;
+  color: gray;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.title-cursoweb {
+  margin-top: 14%;
+  color: white;
+  font-size: 8rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.h2-programar {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.title-h2-cursoweb {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  margin-right: 15%;
+  margin-left: 15%;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+.etapas {
+  margin: 5vh 20vh;
+}
+
+.title-cursow {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.h3-web {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  color: white
+}
+
+.p-web {
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.image-boot{
+  background-image: url('../components/images/okay2.jpg');
+  height: 137.2vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.h2-docentes {
+  color: black;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container-docentes {
+  position: relative;
+  width: 22rem;
+}
+
+.image-web {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.overlay-web {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3f4142a2;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.container-docentes:hover .overlay-web {
+  height: 100%;
+}
+
+.text-web {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 49%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  word-break: break-all;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.nombre-docente {
+  font-size: 1.5rem;
+}
+
+.p-rel-curso {
+  color: gray;
+  margin: 5vh 20vh;
+  font-size: larger;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.h2-cursoweb {
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 3rem;
+}
+
+.h2-cursoweb-dos {
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 0rem;
+}
+
+.formacion-bootcamp {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 4vh auto;
+}
+
+.formacion-divs-bootcamp {
+  margin: 3vh 0vh;
+}
+
+.p-formacion-bootcamp {
+  color: gray;
+  margin: 3vh 5vh;
+  font-size: 1.4rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Lato', sans-serif;
+}
+
+.etapas-boot{
+  padding: 40px 0;
+  background-color: #1d061a;
+  min-height: 550px;
+}
+
+
+.h3-bootcamp {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+.section-dos {
+  margin-top: -4vh;
+  background-color: #161616;
+  padding: 2vh 5vh;
+}
+
+.h2-cursoweb-sec-dos {
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 2rem;
+}
+
+.h3-sec {
+  margin-bottom: 1.1vh;
+  margin-top: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #2a60a9;
+}
+
+.sec-uno{
+  width: 180%;
+}
+
+.sec-why{
+  width: 80%;
+}
+
+ /* .picture{
+  background-image: url('../components/images/fin.jpg');
+  height: 70vh;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}  */
+
+ .finanzizione{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+ 
+.basico{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.finan{
+  padding: 40px 0;
+  background-color: #1d061a;
+  min-height: 50px;
+}
+
+.plazas{
+  color: #161616;
+  font-size: 0.6rem;
+  text-transform: lowercase; 
+}
+.h3-pag{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.bottone1{
+  margin-top: 8rem;
+}
+
+.bottone2{
+  margin-top: 3.5rem;
+}
+
+.bottone3{
+  margin-top: 5.6rem;
+}
+
+
+
+.h3-fin{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  margin-top: 16vh;
+}
+
+.list-fin{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.h5-financiacion {
+  color: gray;
+  margin-top: -8vh;
+  margin-bottom: 5vh;
+}
+
+.p-formacion-sec-dos {
+  color: white;
+  margin: 3vh 2vh;
+  margin-right: -9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Lato', sans-serif;
+ 
+  float: right;
+}
+
+.p-formacion-why{
+  color: white;
+  margin: 10vh 2vh;
+  font-size: 1.4rem;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.why{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8rem;
+  margin: 3vh 2vh;
+  margin-right: -9rem;
+  margin-bottom: 0rem;
+  color: white;
+}
+
+h3 span{
+  color: gray;
+  font-family: 'Poppins';
+}
+
+.formacion-divs-sec {
+  border: 1px solid gray;
+  border-radius: 2.5vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 3vh 3vh;
+  background-color: lightslategray;
+}
+
+.h2-financiacion {
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 4rem;
+}
+
+.p-financiacion {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.h4-fin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.pregunta-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.p-faq {
+  font-size: 1.2rem;
+  color: gray;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.foto-cursoweb {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50vh;
+  min-height: 30%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.flip-box1 {
+  background-color: transparent;
+  width: 71vh;
+  height: 61vh;
+  perspective: 1000px;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 71vh;
+  height: 61vh;
+  perspective: 1000px;
+}
+.flip-box3 {
+  background-color: transparent;
+  width: 71vh;
+  height: 61vh;
+  perspective: 1000px;
+}
+.flip-box4 {
+  background-color: transparent;
+  width: 71vh;
+  height: 61vh;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box2:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box3:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box4:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front1,.flip-box-front2,.flip-box-front3,.flip-box-front4, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-box-front1 {
+  background-color: #f4e9cd;
+  color: white;
+}
+.flip-box-front2 {
+  background-color: #9dbebb;
+  color: white;
+}
+.flip-box-front3 {
+  background-color: #77aca2;
+  color: white;
+}
+.flip-box-front4 {
+  background-color: #468189;
+  color: white;
+}
+
+.flip-box-back {
+  background-color: #f8edeb;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  .foto-cursoweb {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 17.5vh;
+    min-height: 40%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .title-cursoweb {
+    margin: 25% 2%;
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .p-title-cursoweb {
+    margin: 1rem;
+    margin-top: 19%;
+    color: black;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  .h2-programar {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 3rem;
+  }
+
+  .p-rel-curso {
+    color: gray;
+    margin: 5vh 2vh;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  .title-h2-cursoweb {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .etapas {
+    margin: 5vh 2vh;
+  }
+
+  .title-cursow {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8rem;
+  }
+
+  .image-boot{
+    display: none;
+  }
+  
+  .flip-box1 {
+    background-color: transparent;
+    width: 40vh;
+    height: 35vh;
+    position: relative;
+    left: 27.7vh;
+    perspective: 1000px;
+  }
+  
+  .flip-box2 {
+    background-color: transparent;
+    width: 40vh;
+    height: 35vh;
+    perspective: 1000px;
+    position: relative;
+    right: 20vh;
+    margin-top: 35vh;
+    margin-left: 8vh;
+  }
+  .flip-box3 {
+    background-color: transparent;
+    width: 40vh;
+    height: 35vh;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 35vh;
+ 
+  }
+  .flip-box4 {
+    background-color: transparent;
+    width: 40vh;
+    height: 35vh;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 35vh;
+  }
+
+  .flip-box1:hover .flip-box-inner {
+    position: relative;
+    left: 27.7vh;
+    transform: rotateY(180deg);
+  }
+  .flip-box2:hover .flip-box-inner {
+    position: relative;
+    right: 20vh;
+    transform: rotateY(180deg);
+  }
+  .flip-box3:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-box4:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front1 {
+    background-color: #f4e9cd;
+    margin-left: 4vh;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .flip-box-front2 {
+    background-color: #9dbebb;
+    margin-left: 3.6vh;
+    color: white;
+  }
+  .flip-box-front3 {
+    background-color: #77aca2;
+    color: white;
+    margin-left: 28vh;
+  }
+  .flip-box-front4 {
+    background-color: #468189;
+    color: white;
+    margin-left: -12vh;
+  }
+  .h3-web {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+  }
+
+  .p-web {
+    font-size: 1rem;
+    color: gray;
+    font-family: "Lato", sans-serif;
+  }
+
+  .etapas-col {
+    flex: 0 0 auto;
+    width: 100% !important;
+    margin-bottom: 5vh;
+  }
+
+  .h2-cursoweb {
+    color: black;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0rem 4.5rem;
+  }
+
+  .formacion-bootcamp {
+    width: 100%;
+    margin: 0.5vh auto;
+  }
+
+  .image-bo{
+    display: none;
+  }
+  .h2-cursoweb-sec-dos {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: -15rem;
+    margin-left: -16rem;
+}
+
+.why {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  margin: 3vh 2vh;
+  margin-right: -7rem;
+  position: relative;
+  top: -55vh;
+  right: 5vh;
+  margin-bottom: 0rem;
+  color: white;
+}
+
+.p-formacion-sec-dos {
+  color: white;
+  margin: 3vh 2vh;
+  margin-right: -9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+  position: relative;
+  top: -56vh;
+  right: 5vh;
+  text-justify: inter-word;
+  font-family: 'Lato', sans-serif;
+  float: right;
+}
+
+.p-formacion-why {
+  display: none;
+}
+  .section-dos {
+    display: flex!important;
+    flex-direction: column;
+    margin-top: 5vh;
+    background-color: #616161;
+    padding: 2vh 5vh;
+    height: 2000px;
+}
+
+  .div-1 {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10vh 2vh;
+    position: relative;
+    left: 200px;
+    top: -60px;
+    min-width: 360px;
+    max-height: 289px;
+  }
+
+  .div-2 {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5vh 2vh;
+    position: relative;
+    top: 300px;
+    min-width: 360px;
+    left: -197px;
+    max-height: 320px;
+  }
+
+  .div-3 {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5vh 2vh;
+    position: relative;
+    top: 181px;
+    min-width: 360px;
+    left: 200px;
+    max-height: 320px;
+  }
+
+  .div-4 {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5vh 2vh;
+    position: relative;
+    top: 530px;
+    min-width: 360px;
+    left: -197px;
+    max-height: 380px;
+  }
+
+  .h2-docentes {
+    color: black;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .h2-cursoweb-sec {
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 4rem;
+  }
+  .section-dos {
+    margin-top: 5vh;
+    background-color: #616161;
+    padding: 2vh 5vh;
+    height: 1795px;
+  }
+
+  .formacion-bootcamp {
+    width: 100%;
+    margin: 0.5vh auto;
+  }
+
+  .h2-financiacion {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    margin-right:1vh;
+    margin-left: 1vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 3rem;
+  }
+  .div-3-sec {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 5vh;
+    position: relative;
+    top: 181px;
+    min-width: 360px;
+    left: 200px;
+    max-height: 550px;
+  }
+
+  .div-4-sec {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 31vh 2vh;
+    position: relative;
+    top: 530px;
+    min-width: 360px;
+    left: -197px;
+    max-height: 500px;
+  }
+
+  .h2-financiacion {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 3rem;
+}
+
+.h5-financiacion {
+  color: gray;
+  margin-top: -4vh;
+  margin-bottom: 5vh;
+  font-size: 1rem;
+}
+
+  .fin-col{
+    width: 100%!important;
+    margin-bottom: 5vh;
+  }
+
+  .sec-dos-col{
+    flex-direction: column-reverse;
+  }
+
+  .accordion-acc{
+    width: 100%!important;
+  }
+
+  .pregunta-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+
+  .p-faq{
+    font-size: 1.1rem
+  }
+
+  
+  .form-inicio-button{
+    position: relative;
+    right: 50px;
+  }
+
+  .form-control{
+    min-width: 250px!important;
+  }
+
+  .text-area2{
+    min-width: 250px!important;
+    position: relative;
+    right: 42px;
+  }
+  .form-inicio-button{
+    position: relative;
+    right: 50px;
+  }
+
+}
+
+
+/* For 1024 Resolution */  
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+  .foto-cursoweb {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 33vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+ 
+  .title-cursoweb {
+    margin-top: 15%;
+    margin-bottom: 18%;
+    color: white;
+    font-size: 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .p-title-cursoweb {
+    margin: 1rem 2rem;
+    margin-top: 19%;
+    color: black;
+    font-size: 1.3rem;
+    font-family: "Lato", sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .h2-programar {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .title-h2-cursoweb {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+  }
+
+  .h3-web {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+  }
+  .title-cursow {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .image-boot{
+    display: none;
+  }
+
+  .flip-box1 {
+    background-color: transparent;
+    width: 50vh;
+    height: 45vh;
+    perspective: 1000px;
+  }
+  
+  .flip-box2 {
+    background-color: transparent;
+    width: 50vh;
+    height: 45vh;
+    perspective: 1000px;
+   
+  }
+  .flip-box3 {
+    background-color: transparent;
+    width: 50vh;
+    height: 45vh;
+    perspective: 1000px;
+    
+ 
+  }
+  .flip-box4 {
+    background-color: transparent;
+    width: 50vh;
+    height: 45vh;
+    perspective: 1000px;
+   
+  }
+
+
+  .p-formacion-sec-dos {
+  color: white;
+  margin: 3vh 2vh;
+  margin-right: -7rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Lato', sans-serif;
+ 
+  float: right;
+}
+
+.h2-cursoweb-sec-dos {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 2rem;
+}
+
+.p-formacion-why{
+  color: white;
+  margin: 10vh 1vh;
+  font-size: 1rem;
+  margin-top: 10rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.h2-docentes {
+  color: black;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.h2-financiacion {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 4rem;
+}
+
+.h3-pag {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.bottone3 {
+  margin-top: 3.7rem;
+}
+.bottone2 {
+  margin-top: 3.8rem;
+}
+.bottone1 {
+  margin-top: 8.1rem;
+}
+
+.columna-8{
+  margin: auto;
+}
+
+.h3-fin {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  margin-top: 16vh;
+}
+
+.list-fin {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+}
+
+  @media only screen   
+and (min-width: 1304px)   
+and (max-width: 1440px)  
+{ 
+  .foto-cursoweb {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 46vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.title-cursoweb {
+  margin-top: 16%;
+  margin-left: 3%;
+  margin-right: 3%;
+  color: white;
+  font-size: 6rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.p-title-cursoweb {
+  margin: 1rem;
+  margin-top: 24%;
+  color: gray;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.flip-box1 {
+  background-color: transparent;
+  width: 72vh;
+  height: 65vh;
+  perspective: 1000px;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 72vh;
+  height: 65vh;
+  perspective: 1000px;
+}
+.flip-box3 {
+  background-color: transparent;
+  width: 72vh;
+  height: 65vh;
+  perspective: 1000px;
+}
+.flip-box4 {
+  background-color: transparent;
+  width: 72vh;
+  height: 65vh;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box2:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box3:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box4:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front1,.flip-box-front2,.flip-box-front3,.flip-box-front4, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-box-front1 {
+  background-color: #f4e9cd;
+  color: white;
+}
+.flip-box-front2 {
+  background-color: #9dbebb;
+  color: white;
+}
+.flip-box-front3 {
+  background-color: #77aca2;
+  color: white;
+}
+.flip-box-front4 {
+  background-color: #468189;
+  color: white;
+}
+
+.flip-box-back {
+  background-color: #f8edeb;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.image-boot{
+  background-image: url('../components/images/okay2.jpg');
+  height: 146.9vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+}
+
+@media only screen   
+and (min-width: 1440px)  
+and (max-width: 1605px)  
+{ 
+  .foto-cursoweb {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 41vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.title-cursoweb {
+  margin-top: 19%;
+  color: white;
+  font-size: 8rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.flip-box1 {
+  background-color: transparent;
+  width: 50vh;
+  height: 50vh;
+  perspective: 1000px;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 50vh;
+  height: 50vh;
+  perspective: 1000px;
+}
+.flip-box3 {
+  background-color: transparent;
+  width: 50vh;
+  height: 50vh;
+  perspective: 1000px;
+}
+.flip-box4 {
+  background-color: transparent;
+  width: 50vh;
+  height: 50vh;
+  perspective: 1000px;
+}
+
+.image-boot{
+  background-image: url('../components/images/okay2.jpg');
+  height: 111.2vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.h5-financiacion {
+  color: gray;
+  margin-top: -6vh;
+  margin-bottom: 5vh;
+}
+
+}
+
+@media only screen   
+and (min-width: 1440px)  
+and (max-width: 2560px)  
+{ 
+  .foto-cursoweb {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 39vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.title-cursoweb {
+  margin-top: 12%;
+margin-left: 5%;
+margin-right: 5%;
+  color: white;
+  font-size: 10rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.flip-box1 {
+  background-color: transparent;
+  width: 50vh;
+  height: 50vh;
+  perspective: 1000px;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 50vh;
+  height: 50vh;
+  perspective: 1000px;
+}
+.flip-box3 {
+  background-color: transparent;
+  width: 50vh;
+  height: 50vh;
+  perspective: 1000px;
+}
+.flip-box4 {
+  background-color: transparent;
+  width: 50vh;
+  height: 50vh;
+  perspective: 1000px;
+}
+
+.image-boot{
+  background-image: url('../components/images/okay2.jpg');
+  height: 113vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.h5-financiacion {
+  color: gray;
+  margin-top: -3vh;
+  margin-bottom: 5vh;
+}
+.p-title-cursoweb {
+  margin: 1rem;
+  margin-top: 18%;
+  color: gray;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+} 

@@ -1,0 +1,323 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+#mainNavbar {
+  font-size: 1.7rem;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #d85081;
+}
+.navbar.scrolled {
+  background: #adb5bd;
+  transition: background 500ms;
+}
+
+#mainNavbar .navLink {
+  color: #f8f9fa;
+  font-size: 1.3rem;
+}
+
+#mainNavbar .navLink:hover {
+  color: #d85081;
+}
+
+#mainNavbar .navLink.scrolled {
+  color: #343a40;
+  transition: background 500ms;
+}
+
+/******* CSS CURSOS**********/
+
+.container-cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4.3vh 0;
+  background-color: #1d061a;
+  margin-top: -74px;
+}
+
+.container-cursos .box {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+
+.container-cursos .box::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container-cursos .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.container-cursos .box:hover:before,
+.container-cursos .box:hover:after {
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+}
+
+.container-cursos .box:nth-child(1):before,
+.container-cursos .box:nth-child(1):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container-cursos .box:nth-child(2):before,
+.container-cursos .box:nth-child(2):after {
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container-cursos .box:nth-child(3):before,
+.container-cursos .box:nth-child(3):after {
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container-cursos .box span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.container-cursos .box span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.container-cursos .box:hover span::before {
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.container-cursos .box span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  animation-delay: -1s;
+}
+
+.container-cursos .box:hover span:after {
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translate(-10px);
+  }
+}
+
+.container-cursos .box .content {
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+}
+
+.container-cursos .box:hover .content {
+  left: -25px;
+  padding: 60px 40px;
+}
+
+.container-cursos .box .content h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.container-cursos .box .content p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.container-cursos .box .content a {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.container-cursos .box .content a:hover {
+  background: #ffcf4d;
+  border: 1px solid rgba(255, 0, 88, 0.4);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+/**********************/
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/**************************/
+
+.foto-curso{
+  opacity: 0.95;
+}
+
+.title-curso {
+  margin-top: 16%;
+  color: white;
+  font-size: 6rem;
+  font-family: "Prototype", sans-serif;
+}
+
+.p-title-curso {
+  margin: 7rem;
+  margin-top: 3%;
+  color: white;
+  font-size: 2rem;
+  font-family: "Prototype", sans-serif;
+}
+
+.title-h2-curso {
+  margin-top: 14%;
+  margin-bottom: 5%;
+  color: #d85081;
+  font-family: "Prototype", sans-serif;
+  font-size: 2.5rem;
+}
+
+.h2-programar{
+  color: #d85081;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Prototype', sans-serif;
+  margin-top: 8rem;
+}
+
+.title-futuro{
+  color: white;
+  font-size: 4rem;
+  font-family: "Prototype", sans-serif;
+  position: relative;
+  top: 100px;
+}
+
+.bottone-futuro{
+  position: relative;
+  top: 12vh
+}
+
+.futuro {
+  width: 100%;
+  min-height: 400px;
+  background-image: url("https://img.freepik.com/vector-gratis/flujo-diseno-codigo-binario_53876-97406.jpg?t=st=1651265879~exp=1651266479~hmac=1ed12f42540a7b55dbb5425cf1d16e184f5f4bea45f90d93e9a91a36ff64431c&w=740");
+  object-fit: contain;
+  margin-bottom: 10vh;
+}
+
+.h2-title-curso {
+  font-family: "Prototype", sans-serif;
+}
+
+.matricula{
+  border: 1px solid gray;
+  border-radius: 2.5vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 5vh 2vh;
+}
+
+.h2-matricula {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: #d85081;
+  font-family: "Prototype", sans-serif;
+  font-size: 2.5rem;
+}
+
+.p-rel-curso {
+  color: gray;
+  margin: 5vh 20vh;
+  font-size: larger;
+}

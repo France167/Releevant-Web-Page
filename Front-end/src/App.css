@@ -1,0 +1,245 @@
+.foto-container{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../src/components/images/login.jpg");
+  object-fit: contain;
+}
+
+.card{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.card-img-top {
+  inset: 0;
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+  transition: transform 0.75s;
+}
+
+.card-img-top-eventos {
+  inset: 0;
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 0.75s;
+}
+
+.card:hover .card-img-top{
+  transform: scale(1.05);
+}
+
+.card:hover .card-img-top-eventos{
+  transform: scale(1.08);
+}
+
+.overview {
+  overflow: hidden;
+  line-height: 1.5rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+}
+
+.nav-link{
+  font-size: large;
+  font-weight: 500;
+}
+
+
+ .form-h2 {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.navbar{
+  box-shadow: none!important;
+}
+
+.form-box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 40%;
+  padding: 4.3vh;
+  transform: translate(-50%, -50%);
+  background: rgba(14, 12, 12, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.form-box
+ .user-box {
+  position: relative;
+}
+
+.form-box .user-box input {
+  width: 50%;
+  font-family: "Roboto Mono", monospace;
+  padding: 1.1vh 0;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 3.2vh;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.form-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto Mono", monospace;
+  padding: 1.1vh 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.form-box .user-box input:focus ~ label,
+.form-box .user-box input:valid ~ label {
+  top: -20%;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.form-box form button {
+  padding: 1.1vh 2.2vh;
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.5s;
+  margin-top: 1.1vh;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.form-box form button:hover {
+  box-shadow: 0 0 15px #03e9f4;
+}
+
+.error {
+  font-size: normal;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(202, 24, 24);
+  position: relative;
+  margin:auto;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.correct {
+  font-size: large;
+  color: rgb(67, 129, 5);
+  font-family: 'Poppins', sans-serif;
+  margin: auto;
+  text-align: center;
+}
+
+.example{
+  word-break: break-all;
+}
+
+.h1-admin{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.h1-error{
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:35%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.div-error{
+  height: 200px;
+  position: relative;
+}
+ 
+#footer {
+  position:relative;
+  bottom:0;
+  width:100%; 
+}
+
+.link-foot{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .form-h2 {
+    color: white;
+    font-family: 'Prototype', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .form-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 90%;
+    padding: 4.3vh;
+    transform: translate(-50%, -50%);
+    background: rgba(14, 12, 12, 0.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+
+  .form-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Roboto Mono", monospace;
+    padding: 1.1vh 0;
+    font-size: 14px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .form-box .user-box input {
+    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    padding: 1.1vh 0;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 3.2vh;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .error {
+    font-size: normal;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    position: relative;
+    bottom: 40px;
+    margin: 2vh auto;
+    text-align: center;
+  }
+}

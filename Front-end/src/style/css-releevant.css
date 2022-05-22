@@ -1,0 +1,538 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#mainNavbar {
+  font-size: 1.7rem;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #d85081;
+}
+.navbar.scrolled {
+  background: #cccccc;
+  transition: background 500ms;
+}
+
+#mainNavbar .navLink {
+  color: #f8f9fa;
+  font-size: 1.3rem;
+}
+
+.bottone-nav{
+  color: #d85081!important;
+  border-radius: 5px!important;
+}
+
+#mainNavbar .navLink .bottone-nav.scrolled{
+  background-color: rgb(51, 15, 15)!important;
+  color: #cccccc!important;
+}
+
+#mainNavbar .navLink:hover {
+  color: #d85081;
+}
+
+#mainNavbar .navLink.scrolled {
+  color: #343a40;
+  transition: background 500ms;
+}
+
+/*****container curso**********/
+
+.container-cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4.3vh 0;
+  background-color: #1d061a;
+  margin-top: -74px;
+}
+
+.container-cursos .box {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+
+.container-cursos .box::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container-cursos .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.container-cursos .box:hover:before,
+.container-cursos .box:hover:after {
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+}
+
+.container-cursos .box:nth-child(1):before,
+.container-cursos .box:nth-child(1):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container-cursos .box:nth-child(2):before,
+.container-cursos .box:nth-child(2):after {
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container-cursos .box:nth-child(3):before,
+.container-cursos .box:nth-child(3):after {
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container-cursos .box span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.container-cursos .box span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.container-cursos .box:hover span::before {
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.container-cursos .box span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  animation-delay: -1s;
+}
+
+.container-cursos .box:hover span:after {
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translate(-10px);
+  }
+}
+
+.container-cursos .box .content {
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+}
+
+.container-cursos .box:hover .content {
+  left: -25px;
+  padding: 60px 40px;
+}
+
+.container-cursos .box .content h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.container-cursos .box .content p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.container-cursos .box .content a {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.container-cursos .box .content a:hover {
+  background: #ffcf4d;
+  border: 1px solid rgba(255, 0, 88, 0.4);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+/**********************/
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/**************************/
+
+.foto-releevant {
+  opacity: 0.95;
+}
+
+.releevant-title {
+  margin-top: 18%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 8rem;
+  color: #d85081;
+}
+
+.title-releevant {
+  margin-top: 18%;
+  color: white;
+  font-size: 8rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.p-title {
+  margin: 8rem;
+  margin-top: 3%;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.title-h2-releevant {
+  margin-top: 25%;
+  margin-bottom: 5%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+.formacion-releevant{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0.5vh auto;
+}
+
+.formacion-divs-releevant{
+  border: 1px solid gray;
+  border-radius: 2.5vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 5vh 2vh;
+}
+
+.p-formacion-rel{
+  color:gray;
+  margin: 3vh 5vh;
+  font-family: 'Lato', sans-serif;
+}
+
+.h3-releevant{
+  margin-bottom: 1.1vh;
+  margin-top: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.h2-expertos {
+  color: black;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.h5-expertos {
+  color: gray;
+  font-family: 'Lato', sans-serif;
+}
+
+.container-expertos {
+  position: relative;
+  width: 22rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3f4142a2;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.container-expertos:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 46%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-justify: inter-word;
+}
+
+.nombre-experto {
+  font-size: 1.5rem;
+}
+
+.colore-empresa{
+    color: #2a60a9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: small;
+}
+
+.nombre-alumno{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.donde-estamos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5vh auto;
+    margin-bottom: 5vh;
+    position: relative;
+}
+
+.foto-releevant{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 40.85vh;
+  min-height: 30%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.logo{
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .logo{
+    width: 62%;
+  }
+
+  .foto-releevant{
+    position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 20vh;
+      min-height: 30%;
+      object-fit: contain;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+  }
+
+  .releevant-title {
+    margin-top: 25%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.3rem;
+    color: black;
+  }
+  
+  .title-releevant {
+    margin-top: 44%;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .container-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4.3vh 0;
+    margin-top: -32px;
+    background-color: #1d061a;
+  }
+
+  .h2-expertos {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .h5-expertos {
+    color: gray;
+    font-size: 1rem;
+    margin: 0 3%;
+  }
+
+  .map-row{
+    flex-direction: column-reverse;
+    margin-bottom: 5vh;
+  }
+}
+
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+  .foto-releevant {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 38.85vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.title-releevant {
+  margin-top: 23%;
+  color: white;
+  font-size: 5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.releevant-title {
+  margin-top: 18%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7rem;
+  color: #d85081;
+}
+
+.container-cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4.3vh 0;
+  background-color: #1d061a;
+  margin-top: -96px;
+}
+}
+
+ @media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px)  
+{
+  .title-releevant {
+    margin-top: 26%;
+    color: white;
+    font-size: 8rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+}
+
+@media only screen   
+and (min-width: 1304px)   
+and (max-width: 1440px)  
+{ 
+  .title-releevant {
+    margin-top: 18%;
+    color: white;
+    font-size: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.releevant-title {
+  margin-top: 18%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7rem;
+  color: #d85081;
+}
+} 

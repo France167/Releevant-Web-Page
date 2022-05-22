@@ -1,0 +1,1203 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+#mainNavbar {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 768px) { 
+  .navbar-xs{
+    display: flex;
+    justify-content: space-between
+  }
+
+}
+  
+ 
+
+
+.barra-inicio{
+  background-color: #555;
+  color: white;
+  padding: 0.5vh 0vh;
+  font-family: 'Josefin Sans', sans-serif; 
+}
+
+.mas-info{
+  color: white;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #d85081;
+}
+.navbar.scrolled {
+  background: #adb5bd;
+  transition: background 500ms;
+}
+
+#mainNavbar .navLink {
+  color: #f8f9fa;
+  font-size: 1.3rem;
+}
+
+#mainNavbar .navLink:hover {
+  color: #d85081;
+}
+
+#mainNavbar .bottone-nav.scrolled{
+  background-color: rgb(51, 15, 15)!important;
+  color: #cccccc!important;
+}
+
+#mainNavbar .bottone-nav span.scrolled{
+  color: white;
+}
+
+#mainNavbar .navLink.scrolled {
+  color: #343a40;
+  transition: background 500ms;
+}
+
+/************** CURSO CARDS**************/
+
+.container-bootcamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  background-color: #1d061a;
+  min-height: 800px;
+}
+
+.container-bootcamp .box {
+  position: relative;
+  width: 320px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+
+.container-bootcamp .box::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container-bootcamp .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.container-bootcamp .box:hover:before,
+.container-bootcamp .box:hover:after {
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+}
+
+.container-bootcamp .box:nth-child(1):before,
+.container-bootcamp .box:nth-child(1):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+.container-bootcamp .box:nth-child(2):before,
+.container-bootcamp .box:nth-child(2):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+.container-bootcamp .box:nth-child(3):before,
+.container-bootcamp .box:nth-child(3):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container-bootcamp .box span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.container-bootcamp .box span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.container-bootcamp .box:hover span::before {
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.container-bootcamp .box span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  animation-delay: -1s;
+}
+
+.container-bootcamp .box:hover span:after {
+  bottom: -50px;
+  right: 50px;
+  width: 150px;
+  height: 100px;
+  opacity: 1;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translate(-10px);
+  }
+}
+
+.container-bootcamp .box .content {
+  position: relative;
+  left: 0;
+  padding: 10px 5px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+}
+
+.container-bootcamp .box:hover .content {
+  left: -25px;
+  padding: 10px 5px;
+}
+
+.container-bootcamp .box .content h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.container-bootcamp .box .content p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.container-bootcamp .box .content a {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.container-bootcamp .box .content a:hover {
+  background: #ffcf4d;
+  border: 1px solid rgba(255, 0, 88, 0.4);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+/******** SLIDE IN ON SCROLL ******/
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/**************************/
+
+.videoInicio {
+  opacity: 0.96;
+}
+
+.title {
+  margin-top: 17%;
+  color: white;
+  font-size: 8rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.p-title-inicio {
+  margin: 6rem;
+  margin-top: -1%;
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.title-h2 {
+  margin-top: 20%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+}
+
+.title-h2-tres {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+}
+
+.title-h2-dos {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-right: 2%;
+  margin-left: 2%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.title-h3 {
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-right: 15%;
+  margin-left: 15%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
+
+
+
+.h2-title-curso {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.carousel-control-next-icon:after {
+  display: none;
+}
+
+.carousel-control-prev-icon:after {
+  display: none;
+}
+
+.h2-curso {
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 0rem;
+}
+
+.h2-compania-inicio {
+  margin-top: 5%;
+  margin-bottom: -2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: rgb(255, 255, 255);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+  padding: 6vh;
+}
+
+.docentes {
+  text-decoration: none;
+  color: #111;
+}
+
+.docentes:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+.h2-compania-inicio1 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+  padding: 6vh;
+}
+
+.h5-curso {
+  color: gray;
+}
+
+.h5-curso1 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.p-formacion {
+  color: gray;
+  margin: 3vh 5vh;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.1rem;
+}
+
+.h3 {
+  margin-bottom: 1.1vh;
+  margin-top: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.h4 {
+  margin-bottom: 1.1vh;
+  margin-top: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.8rem;
+}
+
+.formacion {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0.5vh auto;
+}
+
+.formacion-divs {
+  margin: 2vh 0vh;
+}
+
+.h2-carousel {
+  color: black;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-inicio {
+  width: 80%;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 2.5vh;
+  box-shadow: rgb(149, 149, 149) 0px 5px 15px;
+  background-color: white;
+}
+
+.form-cont {
+  background-color: #1d061a;
+  min-height: 600px;
+}
+
+.images-inicio{
+  object-fit: cover;
+}
+
+/****flip card****/
+
+.flip-card {
+  background-color: transparent;
+  width: 48vh;
+  height: 48vh;
+  perspective: 106vh;
+  margin: 8vh 2vh;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #a2a7aaa9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*********** MEDIA QUERIES ***************/
+
+@media screen and (max-width: 600px) {
+
+  .barra-inicio {
+    background-color: #555;
+    color: white;
+    padding: 0.5vh 0vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7rem;
+}
+  .videoInicio {
+    width: 50%;
+    max-height: 500px;
+  }
+
+  .title {
+    margin-top: 75%;
+    color: white;
+    font-size: 2.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .p-title-inicio {
+    margin: 1rem;
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .title-h2 {
+    margin-top: 90%;
+    margin-bottom: 1%;
+    margin-right: 15%;
+    margin-left: 18%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .title-h2-dos {
+    margin-top: 5%;
+    margin-bottom: 15%;
+    margin-right: 15%;
+    margin-left: 13%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+  }
+
+  .title-h2-tres{
+    margin-top: 250%;
+    margin-bottom: 5%;
+    margin-right: 25%;
+    margin-left: -5%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 35vh;
+    height: 35vh;
+    perspective: 106vh;
+    margin: 8vh 5vh;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #a2a7aaa9;
+    color: white;
+    font-size: 0.8rem;
+    transform: rotateY(180deg);
+  }
+
+  .p-formacion {
+    color: gray;
+    margin: 1vh 5vh;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.9rem;
+  }
+  
+
+
+  .title-h3 {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .h2-title-curso {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .formacion {
+    width: 100%;
+    margin: 0.5vh auto;
+  }
+
+  .div-1-inicio {
+    margin: 10vh 2vh;
+    position: relative;
+    left: 584px;
+    top: -141px;
+    min-width: 360px;
+    max-height: 289px;
+  }
+  .div-2-inicio {
+    margin: 5vh 2vh;
+    position: relative;
+    top: 245px;
+    min-width: 360px;
+    left: 193px;
+    max-height: 320px;
+  }
+
+  .div-3-inicio {
+    margin: 5vh 2vh;
+    position: relative;
+    top: 600px;
+    min-width: 360px;
+    left: -198px;
+    max-height: 320px;
+  }
+
+  .div-4-inicio {
+    margin: 5vh 2vh;
+    position: relative;
+    top: 960px;
+    min-width: 360px;
+    left: -588px;
+    max-height: 350px;
+  }
+
+  .container-bootcamp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background-color: #1d061a;
+    min-height: 800px;
+    position: relative;
+    top: 30px;
+  }
+
+  .h2-curso {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin: 0vh 5vh;
+  }
+
+  .h5-curso1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    margin: 1vh 5vh;
+  }
+
+  .h2-carousel {
+    color: black;
+    font-size: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .h2-compania-inicio1 {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    padding: 5vh;
+  }
+
+  .h5-curso {
+    color: gray;
+    font-size: 1rem;
+    margin: 1vh 5vh;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .h2-compania-inicio {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    padding: 4vh;
+  }
+
+  .form-inicio-button{
+    position: relative;
+    right: 50px;
+  }
+
+  .form-control{
+    min-width: 250px!important;
+  }
+
+  .text-area{
+    min-width: 250px!important;
+  }
+
+  #mainNavbar{
+    background-color: #adb5bd;
+    color: #343a40;
+  }
+  
+}
+
+
+/*****************/
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 950px;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.form-control, 
+textarea {
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+  width: 30rem;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+  margin-top: 5vh;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
+/* For 1024 Resolution */  
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+
+  .title {
+    margin-top: 23%;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .p-title-inicio {
+    margin: 6rem;
+    margin-top: -1%;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+  }
+  .h2-curso {
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0rem;
+}
+
+
+  .title-h2 {
+    margin-top: 50%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    margin-left: 2%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 28vh;
+    height: 28vh;
+    perspective: 106vh;
+    margin: 8vh 1vh;
+  }
+  .formacion {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0.5vh auto;
+  }
+  
+  .formacion-divs {
+    margin: -4vh 0vh;
+  }
+
+  .p-formacion {
+    color: gray;
+    margin: 1vh 5vh;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.65rem;
+  }
+
+  .flip-card-back {
+    background-color: #a2a7aaa9;
+    color: white;
+    font-size: 0.8rem;
+    transform: rotateY(180deg);
+  }
+
+ .flip-card-back .h4{
+    font-size: 1rem;
+  }
+ 
+}  
+
+
+
+ /* For 1366 Resolution */  
+ @media only screen   
+and (min-width: 1304px)   
+and (max-width: 1440px)  
+{ 
+  .title {
+    margin-top: 20%;
+    color: white;
+    font-size: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+  .p-title-inicio {
+    margin: 6rem;
+    margin-top: -1%;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .title-h2 {
+    margin-top: 18%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    margin-left: 2%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 45vh;
+    height: 45vh;
+    perspective: 106vh;
+    margin: 8vh 1vh;
+  }
+  .formacion {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0.5vh auto;
+  }
+  
+  .formacion-divs {
+    margin: 2vh 0vh;
+  }
+
+  .p-formacion {
+    color: gray;
+    margin: 1vh 5vh;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.65rem;
+  }
+
+  .flip-card-back {
+    background-color: #a2a7aaa9;
+    color: white;
+    font-size: 0.8rem;
+    transform: rotateY(180deg);
+  }
+
+ .flip-card-back .h4{
+    font-size: 1rem;
+  }
+}   
+
+@media only screen   
+and (min-width: 1440px)  
+and (max-width: 1605px)  
+{ 
+
+  .title {
+    margin-top: 26%;
+    color: white;
+    font-size: 8rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.title-h2 {
+  margin-top: 32%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 35vh;
+  height: 35vh;
+  perspective: 106vh;
+  margin: 8vh 1vh;
+}
+}
+
+@media only screen   
+and (min-width: 1440px)  
+and (max-width: 2560px)  
+{ 
+  .title {
+    margin-top: 20%;
+    color: white;
+    font-size: 10rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.title-h2 {
+  margin-top: 35%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 35vh;
+  height: 35vh;
+  perspective: 106vh;
+  margin: 8vh 1vh;
+}
+.title-h2 {
+  margin-top: 18%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+}
+} 
